@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --color-ink: #1c1b22;
+  --color-muted: #6b6a75;
+  --color-line: #e4e2ea;
+  --color-paper: #f7f6f9;
+  --color-brand: #4f3ff0;
+  --color-brand-dark: #3b2ed0;
+  --color-brand-soft: #eeecff;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+}
